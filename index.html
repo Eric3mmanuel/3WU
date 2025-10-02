@@ -965,14 +965,19 @@ Documentation</h4>
                     <div class="col-md-8">
                         <div class="contact-form">
                             <div id="success"></div>
-                            <form name="sentMessage" id="contactForm" novalidate="novalidate">
+                            <form name="sentMessage" id="contactForm" novalidate="novalidate" action="https://api.web3forms.com/submit" method="POST">
+
+<input type="hidden" name="access_key" value="9dc652fb-cfed-453c-8fc8-08608d089b58">
+
                                 <div class="control-group">
                                     <input type="text" class="form-control" id="name" placeholder="Your Name"
+name="name
                                         required="required" data-validation-required-message="Please enter your name" />
                                     <p class="help-block"></p>
                                 </div>
                                 <div class="control-group">
                                     <input type="email" class="form-control" id="email" placeholder="Your Email"
+name="email"
                                         required="required"
                                         data-validation-required-message="Please enter your email" />
                                     <p class="help-block"></p>
@@ -984,6 +989,7 @@ Documentation</h4>
                                 </div>
                                 <div class="control-group">
                                     <textarea class="form-control" id="message" placeholder="Message"
+name="message" 
                                         required="required"
                                         data-validation-required-message="Please enter your message"></textarea>
                                     <p class="help-block"></p>
